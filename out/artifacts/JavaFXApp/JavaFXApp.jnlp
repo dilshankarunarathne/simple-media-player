@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApp.jnlp">
+    <information>
+        <title>Media Player By Dilshan Karunarathne</title>
+        <vendor>Dilshan Karunarathne</vendor>
+        <description>Media Player  Created by Dilshan Karunarathne 2021-07-04</description>
+        <offline-allowed/>
+    </information>
+    <update check="background"/>
+    <resources>
+        <j2se version="10.0.2+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JavaFXApp.jar" size="9675" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="600" height="400" main-class="sample.Main" name="Main"/>
+</jnlp>
+
