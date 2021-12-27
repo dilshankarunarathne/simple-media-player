@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'JavaFXApp.jnlp'
+            },
+            {
+                javafx : '10.0.2+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedsample() {
+        dtjava.embed(
+            {
+                id : 'sample',
+                url : 'JavaFXApp.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '10.0.2+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedsample);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>Main</b>
+        </h2>
+        <b>Webstart:</b><a href="JavaFXApp.jnlp" onclick="return launchApplication('JavaFXApp.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
